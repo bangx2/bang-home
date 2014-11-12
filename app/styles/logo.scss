@@ -1,0 +1,62 @@
+
+@mixin bangx2-logo($logo-size, $default-bg, $default-color) {
+
+$golden-ratio: 0.618;
+$big-triangle-width: $logo-size*$golden-ratio;
+$small-triangle-width: $big-triangle-width*$golden-ratio;
+
+.logo-bg {
+  width: $logo-size;
+  height: $logo-size;
+  background-color: $default-bg;
+  position: relative;
+  border-radius: $logo-size*$golden-ratio*$golden-ratio*$golden-ratio*$golden-ratio*$golden-ratio*$golden-ratio*$golden-ratio;
+}
+
+.big-triangle-up {
+  width: 0;
+  height: 0;
+  border-top: $big-triangle-width*0.5 solid transparent;
+  border-bottom: $big-triangle-width*0.5 solid transparent;
+  border-left: $big-triangle-width solid $default-color;
+  position: absolute;
+  left: $big-triangle-width*$golden-ratio/2;
+}
+
+.small-triangle-up {
+  width: 0;
+  height: 0;
+  border-top: $small-triangle-width*0.5 solid transparent;
+  border-bottom: $small-triangle-width*0.5 solid transparent;
+  border-left: $small-triangle-width solid $default-bg;
+  position: absolute;
+  top: -$small-triangle-width*0.5; 
+  left: -$big-triangle-width + ($big-triangle-width - $small-triangle-width - (($big-triangle-width - $small-triangle-width)*$golden-ratio));
+}
+
+
+.big-triangle-down {
+  width: 0;
+  height: 0;
+  border-top: $big-triangle-width*0.5 solid transparent;
+  border-bottom: $big-triangle-width*0.5 solid transparent;
+  border-left: $big-triangle-width solid $default-color;
+  position: absolute;
+  bottom: 0;
+  left: $big-triangle-width*$golden-ratio/2;
+}
+
+.small-triangle-down {
+  width: 0;
+  height: 0;
+  border-top: $small-triangle-width*0.5 solid transparent;
+  border-bottom: $small-triangle-width*0.5 solid transparent;
+  border-left: $small-triangle-width solid $default-bg;
+  position: relative;
+  top: -$small-triangle-width*0.5; 
+  left: -$big-triangle-width + ($big-triangle-width - $small-triangle-width - (($big-triangle-width - $small-triangle-width)*$golden-ratio));
+}
+}
+
+
+

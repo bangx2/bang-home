@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>邦邦 - www.bangx2.com</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="alternate icon" type="image/png" href="favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="lib/amazeui/assets/css/amazeui.min.css">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3e264c7b998bbad9be6d1e67bd09d99e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55741217-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+  <body class="">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <style>
+    body {
+      overflow: auto;
+    }
+    </style>
+
+    <header class="am-topbar head">
+      <div class="am-topbar-brand">
+        <a href="/">
+        <div class="index-header-logo">
+          <div class="logo-bg">
+            <div class="big-triangle-up">
+              <div class="small-triangle-up"></div>
+            </div>
+            <div class="big-triangle-down">
+              <div class="small-triangle-down"></div>
+            </div>
+          </div>
+        </div> <span class="index-header-title">邦邦</span></a>
+      </div>
+      <div class="am-fl index-header-info">
+        <span class="index-header-info-version">beta</span>
+        <span class="index-header-info-url">www.bang<span class="am-text-warning">x2</span>.com</span>
+      </div>
+
+      <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+        data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+          class="am-icon-bars"></span></button>
+
+      <div class="am-collapse am-topbar-collapse am-topbar-right" id="collapse-head">
+        <nav class="scrollspy-nav" data-am-scrollspy-nav="{className: {active: 'am-active'}}" data-am-sticky>
+          <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li><a href="#login">登陆</a></li>
+            <li><a href="#discovery">发现</a></li>
+            <li><a href="#seed-user">内测</a></li>
+          </ul>
+        </nav>
+
+        <!--
+        <div class="am-topbar-right">
+          <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" ui-sref="login"><span class="am-icon-user"></span> 登录</button>
+        </div>
+        -->
+      </div>
+    </header>
+
+    <div class="get" id="login">
+      <div class="am-g am-container">
+        <div class="col-lg-12">
+          <h1 class="get-title" data-am-scrollspy="{animation:'slide-left'}">
+            工作亦是生活，何不去发现它的美
+          </h1>
+        </div>
+
+        <div class="col-md-12 col-lg-10 col-sm-centered">
+          <div class="am-g">
+
+            <div class="col-md-6 am-hide-sm-only" data-am-scrollspy="{animation:'scale-up'}">
+              <p>
+              猜猜看，Logo中有多少个0.618 ?
+              </p>
+              <div class="banner-logo">
+                <div class="logo-bg">
+                  <div class="big-triangle-up">
+                    <div class="small-triangle-up"></div>
+                  </div>
+                  <div class="big-triangle-down">
+                    <div class="small-triangle-down"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-am-scrollspy="{animation:'slide-right'}">
+              <br>
+              <h3>登陆邦邦</h3>
+              <hr>
+              <form ng-submit="login()" class="am-form">
+                <input ng-model="user.username" type="email" name="username" id="username" required placeholder="邮箱"/>
+                <br>
+                <input ng-model="user.password" type="password" name="password" id="password" required placeholder="密码">
+                <br>
+                <div class="am-cf">
+                  <input type="submit" name="" value="登陆" class="am-btn am-btn-primary am-btn-block am-btn-sm am-fl">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="detail" id="discovery">
+      <div class="am-g am-container">
+        <div class="col-lg-12">
+          <h2 class="detail-h2"></h2>
+
+          <div class="am-g">
+            <div class="col-lg-3 col-md-6 col-sm-12 detail-mb">
+              <h3 class="detail-h3">
+                完美支持所有屏幕尺寸
+              </h3>
+
+              <p class="detail-p">
+                无论手机、PAD、电脑，让您触手可及的一切联网设备，都能轻松使用我们的服务。基于 Amaze UI 构建，更轻量、更高效，更完美。
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 detail-mb">
+
+              <h3 class="detail-h3">
+                高效工作，比“deli”更得力
+              </h3>
+
+              <p class="detail-p">
+                统计员工信息、组织活动、统一订餐、差旅预订报销...还在用传统低效的方式解决这些问题？交给邦邦好了，请相信，我们也能——“说的很少，做的很好”！
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 detail-mb">
+              <h3 class="detail-h3">
+                按需付费的服务
+              </h3>
+              
+              <p class="detail-p">
+                免费配额，足够50人企业日常使用。配额可灵活调整，适应企业不同阶段的发展。超过配额部分，也会按实际使用量计费，并提供详细流水和发票管理。
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 detail-mb">
+              <h3 class="detail-h3">
+                懂生活，让工作更有趣
+              </h3>
+
+              <p class="detail-p">
+                邦邦服务企业，是为了帮您从重复乏味的工作内容中解脱处理，让您的创造力得以发挥，让您有更多非工作的生活时间。邦邦希望只存在于您生活的一小部分时间。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hope">
+      <div class="am-g am-container">
+        <div class="col-sm-10  col-sm-centered">
+          <h2 class="hope-title">给自己找一位高效的小帮手&nbsp;&nbsp;&nbsp;给老板多一个信任您的理由</h2>
+          <h3>
+            统计中秋月饼寄送地址
+          </h3>
+          <p>
+          汇总几百份邮件？
+          </p>
+          <p>
+          粘贴几百个Excel？
+          </p>
+          <p>
+          到截止时间了还有几十人未回复......
+          </p>
+          <h3>
+            行政和人力也得过中秋啊!!! 试试 邦邦-问卷 吧!
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="seed-user">
+      <div class="am-g am-container">
+        <div class="col-lg-12">
+          <h2 class="about-title about-color" id="tools">参与内测，赢10斤零食 :P</h2>
+
+          <div class="am-g">
+            <div class="col-md-6 col-sm-12">
+              <form class="am-form">
+                <label for="email" class="about-color">您的邮箱</label>
+                <input id="email" type="email" placeholder="请填写有效的邮箱，用来接收内测邀请邮件">
+                <br/>
+                <label for="name" class="about-color">您的姓名</label>
+                <input id="name" type="text" placeholder="请填写您的真实名字">
+                <br/>
+                <label for="company" class="about-color">公司及工作描述</label>
+                <textarea id="company" rows="4" placeholder="请填写您的公司名称，并尽可能详细描述您的工作内容，以便我们准确审核您的内测资格"></textarea>
+                <br/>
+                <button type="submit" class="am-btn am-btn-primary am-btn-sm" disabled="disabled">暂无更多申请名额，请持续关注，谢谢</button>
+              </form>
+              <hr class="am-article-divider am-show-sm-only">
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <h4 class="about-color">关于邦邦</h4>
+
+              <p>大部分网络产品都在绞尽脑汁去发现具有用户粘性的功能，希望用户尽可能把时间花费在自己的产品上。</p>
+              <p>然而无论再精彩的网络生活，值得我们用真实生活的时间去换取吗？</p>
+              <p>网络应该是服务于生活，而不是成为我们的生活。</p>
+
+              <h4 class="about-color">关于内测资格</h4>
+
+              <p>无论如何，都感谢您提交的内测申请！</p>
+              <p>考虑到邦邦存在的意义，我们会重点关注以下两类申请者：</p>
+              <p>1. 软件开发、产品从业者或爱好者，我们渴望倾听您对于邦邦在技术、体验、产品形态上的任何意见。</p>
+              <p>2. 行政及人力工作从业者，我们希望能与您深入交流，倾听您对于日常工作的真实感受，让我们帮您把工作变得更高效。</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2014 BangBang Technology Co., Ltd.</p>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!--
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="lib/amazeui/assets/js/zepto.min.js"></script>
+    <script src="lib/amazeui/assets/js/amazeui.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
